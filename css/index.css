@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.65;
+  color: #1c1917;
+  background-color: #fffdfa;
+}
+
+header {
+  background-color: #1b4332;
+  color: #ffffff;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 12px rgba(27, 67, 50, 0.18);
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo,
+.brand {
+  color: #fef3c7;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.3px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #ecfdf5;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #fbbf24;
+}
+
+.hero {
+  background: linear-gradient(135deg, #2d6a4f 0%, #40916c 55%, #d97706 100%);
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 38px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.hero p {
+  color: #fef3c7;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.btn,
+.button {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 13px 28px;
+  background-color: #e05a47;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 14px rgba(224, 90, 71, 0.35);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover,
+.button:hover {
+  background-color: #c94a38;
+  transform: translateY(-2px);
+}
+
+.section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 55px 20px;
+}
+
+.bg-light,
+.section-tint {
+  background-color: #f7f3eb;
+  max-width: 100%;
+  border-top: 1px solid #e7e0d2;
+  border-bottom: 1px solid #e7e0d2;
+}
+
+.bg-light > *,
+.section-tint > * {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  margin-bottom: 16px;
+  color: #1b4332;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+h3 {
+  margin-bottom: 10px;
+  color: #b45309;
+}
+
+p {
+  margin-bottom: 12px;
+  color: #44403c;
+}
+
+.about-img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: 320px;
+  object-fit: cover;
+  margin: 20px auto 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(28, 25, 23, 0.12);
+}
+
+#courses ul,
+#courses ol,
+.steps {
+  margin: 15px auto 25px;
+  padding-left: 25px;
+  color: #292524;
+  font-weight: 500;
+}
+
+#courses li,
+.steps li {
+  margin-bottom: 8px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 25px auto;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px 20px;
+  border: 1px solid #e7e0d2;
+  border-top: 4px solid #e05a47;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(28, 25, 23, 0.05);
+  position: relative;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  color: #1b4332;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fef3c7;
+  color: #92400e;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(28, 25, 23, 0.05);
+}
+
+th,
+td {
+  border: 1px solid #e7e0d2;
+  padding: 13px 15px;
+  text-align: left;
+  color: #1c1917;
+}
+
+th {
+  background-color: #2d6a4f;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #faf8f5;
+}
+
+.registration-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.registration-form {
+  background-color: #ffffff;
+  padding: 28px;
+  border: 1px solid #e7e0d2;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(28, 25, 23, 0.06);
+}
+
+.registration-form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 600;
+  color: #1c1917;
+}
+
+textarea,
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  background-color: #fffdfa;
+  color: #1c1917;
+  border: 1px solid #d6cfc2;
+  border-radius: 6px;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #2d6a4f;
+  box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.14);
+}
+
+fieldset {
+  border: 1px solid #d6cfc2;
+  padding: 10px 14px;
+  margin-top: 14px;
+  border-radius: 6px;
+}
+
+legend {
+  color: #1b4332;
+  font-weight: 700;
+  padding: 0 6px;
+}
+
+.radio-label {
+  display: inline-block;
+  margin-right: 16px;
+  font-weight: normal;
+  color: #1c1917;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 16px;
+  padding: 13px 24px;
+  background-color: #e05a47;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 3px 10px rgba(224, 90, 71, 0.25);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #c94a38;
+  transform: translateY(-1px);
+}
+
+.reset-btn {
+  background-color: #78716c;
+  box-shadow: none;
+}
+
+footer {
+  background-color: #1b4332;
+  color: #d8f3dc;
+  text-align: center;
+  padding: 24px;
+}
+
+footer p {
+  color: #d8f3dc;
+  margin: 0;
+}
+
+.top-link {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #e05a47;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  header,
+  .header-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .registration-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
